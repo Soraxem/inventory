@@ -1,0 +1,67 @@
+---
+title: tags
+---
+
+<style>
+@page {
+    margin: 0mm;
+}
+
+body, p {
+   margin: 0px;
+}
+
+img {
+	padding: 10%;
+	height: 80%;
+}
+
+h1 {
+	font-size: 45px;
+}
+
+.container {
+	height: 22.3vh;
+	width: 100%;
+	padding: 2.5vh;
+	background: teal;
+}
+
+.left, .middle, .right {
+	display: inline-block;
+	*display: inline;
+	vertical-align: top;
+	padding: 0px;
+}
+
+.left {
+	width: 30%;
+	background: blue;
+}
+
+.middle {
+	width: 60%;
+	background: green;
+}
+
+</style>
+
+<body>
+	<div style='position:relative;overflow:hidden;background:#ff00ff!important;padding:0px;'>
+	
+
+
+    	{% assign items = site.html_pages %}
+    	{% for item in items %}
+    		<div class='container'>
+				<div class='left'>
+					<img src="https://upload.wikimedia.org/wikipedia/commons/2/24/LEGO_logo.svg">
+				</div>
+				<div class='middle'>
+					<h1>{{ item.title }}</h1>
+				</div>
+    		</div>
+    	{% endfor %}
+    	
+	</div>
+</body>
