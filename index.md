@@ -10,6 +10,6 @@ In the future it shall be possible to borrow items.
 
 <ul>
 {% for page in site.html_pages %}
-    <li><a href="{{ site.baseurl }}{{ page.url }}">{{ page.title }}</a></li>
+    <li><a href="{{ page.url }}">{{ page.title }}</a></li>
 {% endfor %}
 </ul>
