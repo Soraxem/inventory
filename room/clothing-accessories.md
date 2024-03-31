@@ -1,6 +1,7 @@
 ---
 title: Clothing Accessories
 location: room
+type: RL-KLT
 ---
 - Belts
 - Skimasks

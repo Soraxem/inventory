@@ -1,1 +1,10 @@
 baseurl: "/"
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+  - scope:
+      path: "tags"
+    values:
+      layout: "tags"
