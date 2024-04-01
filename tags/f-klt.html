@@ -1,0 +1,78 @@
+---
+title: Tags for F-KLT
+---
+
+<style>
+
+* {
+	margin: 0mm;
+}
+
+@page {
+    margin: 0mm;
+}
+
+body, p {
+   margin: 0px;
+}
+
+img {
+	padding: 10%;
+	height: 80%;
+}
+
+h1 {
+	font-size: 50px;
+}
+
+.container {
+	height: 22.3vh;
+	width: 100%;
+	padding: 2.5vh;
+	margin: 0px !important;
+}
+
+.left, .middle, .right {
+	display: inline-block;
+	*display: inline;
+	vertical-align: top;
+	padding: 0px;
+}
+
+.left {
+	width: 30%;
+}
+
+.middle {
+	width: 60%;
+}
+
+</style>
+
+<body>
+	<div style='position:relative;overflow:hidden;padding:0px;'>
+	
+
+
+    	{% assign items = site.html_pages | where: "type", "F-KLT"  %}
+    	{% for item in items %}
+    		<div class='container'>
+				<div class='left'>
+					<img src="">
+				</div>
+				<div class='middle'>
+					<h1>{{ item.title }}</h1>
+				</div>
+    		</div>
+    		<div class='container'>
+				<div class='left'>
+					<img src="">
+				</div>
+				<div class='middle'>
+					<h1></h1>
+				</div>
+    		</div>
+    	{% endfor %}
+    	
+	</div>
+</body>
