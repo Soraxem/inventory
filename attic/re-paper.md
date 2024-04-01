@@ -1,5 +1,5 @@
 ---
 title: Re-Paper
-location: room
+location: attic
 type: F-KLT
 ---

@@ -1,5 +1,5 @@
 ---
 title: Projector
-location: room
+location: attic
 type: F-KLT
 ---
